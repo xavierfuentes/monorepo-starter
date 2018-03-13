@@ -2,14 +2,12 @@
   "name": "monorepo-starter",
   "version": "0.1.0",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "devDependencies": {},
-  "dependencies": {
+  "workspaces": ["packages/*"],
+  "devDependencies": {
     "eslint": "^4.18.2",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1"
-  }
+  },
+  "dependencies": {}
 }
