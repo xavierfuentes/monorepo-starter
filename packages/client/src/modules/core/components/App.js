@@ -1,21 +1,23 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-import logo from './logo.svg';
-import './App.css';
+import ReposList from '../../repos/components/ReposList';
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="App-title">Welcome to React</h1>
+  <div>
+    <header>
+      <h1>Welcome to Roshi</h1>
     </header>
-    <p className="App-intro">
-      To get started, edit <code>src/App.js</code> and save to reload.
-    </p>
+
+    <main>
+      <section>Filters</section>
+      <ReposList repos={[{ name: 'caca' }, { name: 'de vaca' }]} />
+    </main>
+
+    <footer>Made with love</footer>
   </div>
-)
+);
 
-App.propTypes = {}
+App.propTypes = {};
 
-export default App
+export default App;
