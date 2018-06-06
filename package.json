@@ -1,6 +1,7 @@
 {
-  "name": "monorepo-starter",
+  "name": "monorepo",
   "version": "0.1.0",
+  "author": "Xavier Fuentes <mr.xavifuentes@gmail.com>",
   "private": true,
   "workspaces": ["packages/*"],
   "lint-staged": {
