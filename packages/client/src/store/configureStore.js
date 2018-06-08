@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 
-import rootReducer from '../modules/root/reducers';
+import rootReducer from '../root/reducers';
 
 const configureStore = preloadedState => {
   const ignoredActionTypes = [];
@@ -25,7 +25,7 @@ const configureStore = preloadedState => {
 
   if (process.env.NODE_ENV !== 'production' && module.hot) {
     // Enable Webpack hot module replacement for reducers
-    module.hot.accept('../modules/root/reducers', () => {
+    module.hot.accept('../root/reducers', () => {
       store.replaceReducer(rootReducer);
     });
   }

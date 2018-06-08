@@ -6,7 +6,7 @@ import './index.css'
 
 import registerServiceWorker from './registerServiceWorker';
 import configureStore from './store/configureStore'
-import Root from './modules/root/components/Root'
+import Root from './root/components/Root'
 
 const store = configureStore()
 
