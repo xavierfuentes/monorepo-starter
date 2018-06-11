@@ -1,9 +1,9 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-import { Button } from 'ui';
+import { Button } from '@xlabs/monorepo-ui';
 
-const App = () => (
+const Root = () => (
   <div>
     <header>
       <h1>Welcome to a monorepo</h1>
@@ -19,6 +19,6 @@ const App = () => (
   </div>
 );
 
-App.propTypes = {};
+Root.propTypes = {};
 
-export default App;
+export default Root;
